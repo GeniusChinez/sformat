@@ -35,7 +35,7 @@ namespace gc {
         }(args), 0)...};
 
         while (format_iterator != std::end(fmt)) {
-            ss << std::boolalpha << *format_iterator++;
+            ss << *format_iterator++;
         }
 
         return ss.str();
